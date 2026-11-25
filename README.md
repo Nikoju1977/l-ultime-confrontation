@@ -1,4 +1,25 @@
 # 📖 L'Ultime Confrontation
+
+## Architecture constatée
+
+```mermaid
+flowchart LR
+ Assets[Cover and photographs] --> Page[Static literary presentation]
+ Page --> Scroll[Scroll reveal and layout]
+ Page --> Checkout[External checkout link]
+ Page --> Audio[Optional audio reference]
+```
+
+La page [index.html](index.html) contient une présentation du roman, des illustrations locales, une animation de révélation au défilement et un lien de paiement Stripe externe. Aucun moteur narratif à embranchements, lecteur du livre complet ou serveur de commandes n'est établi. La référence audio `musique_theme.mp3` ne correspond à aucun fichier présent à la racine inspectée. Le lien commercial, le prix et la distribution KDP ne sont pas vérifiés.
+
+Qualification proposée : vérifier les droits des images, le texte, les ressources manquantes, la navigation clavier et les informations commerciales avant publication. Aucun achat, appel de paiement, test navigateur ou contrôle HTTP réalisé.
+
+## English overview
+
+Static promotional website for the novel L'Ultime Confrontation, with cover art, photographs, scroll animations and an external checkout link. The referenced local audio asset is missing from the inspected root. This is not the full book or an interactive narrative engine. No commercial, runtime or deployment validation was performed.
+
+[Notice de droits](LICENSE.md) : droits existants préservés.
+
 **Studio Niko Design** — Roman · Thriller ésotérique post-incendie Notre-Dame.
 
 > Thriller ancré dans la reconstruction de Notre-Dame de Paris — 24 mars 2025. Auto-publication KDP.
